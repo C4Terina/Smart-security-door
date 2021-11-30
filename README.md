@@ -9,7 +9,7 @@ Our project's goal is to create an automated door lock which allows you to unloc
    
    Wires
    
-   RC522 RFID Sensor 
+   RC522 RFID Sensor and RFID cards
    
    Micro Servo 
    
