@@ -10,8 +10,8 @@ path = "Captured_faces/Person2/"
 
 if not os.path.exists(path):
     os.makedirs(path)
-    for user in os.listdir("Captured_faces/"):
-        users_ids += 1
+for user in os.listdir("Captured_faces/"):
+    users_ids += 1
 
 while True:
     check, frame = video.read()
