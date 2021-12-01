@@ -24,7 +24,7 @@ while True:
 
     for x,y,w,h in face:
         # img_name = "Captured_faces/Name{}.png".format(img_counter)
-        img_name = path + "Person1" + "_" + str(users_ids) + "_" + str(img_counter) + ".png"
+        img_name = path + "Person" + "_" + str(users_ids) + "_" + str(img_counter) + ".png"
         captured_face = frame[y:y + h, x:x + w]
         gray_face = cv2.cvtColor(captured_face, cv2.COLOR_BGR2GRAY)
         cv2.imwrite(img_name, gray_face)
