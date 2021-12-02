@@ -3,7 +3,6 @@ import cv2
 import os
 import numpy as np
 from PIL import Image
-import pickle
 
 
 cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
