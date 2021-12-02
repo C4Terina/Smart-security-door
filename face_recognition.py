@@ -1,6 +1,5 @@
 # import the required libraries
 import cv2
-import pickle
 import os
 
 video = cv2.VideoCapture(0)
