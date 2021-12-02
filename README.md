@@ -19,7 +19,7 @@ Our project's goal is to create an automated door lock which allows you to unloc
    
    Laptop/PC 
    
-   Python with opencv
+   Python with opencv, opencv-contrib-python, os, numpy, PIL
    
 
 ## Installation:
