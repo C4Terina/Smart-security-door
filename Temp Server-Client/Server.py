@@ -56,3 +56,4 @@ while True:
                 #key = cv2.waitKey(1) & 0xFF
                 #if key == ord('q'):
                     #client_socket.close()
+# go to http://localhost:3088/ -> Webclient
