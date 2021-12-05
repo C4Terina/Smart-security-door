@@ -50,8 +50,8 @@ while True:
                 face_id = "ID"
 
 
-                cv2.imshow('Server', frame) # will show video frame on server side.
+                cv2.imshow('Camera view from the Server', frame) # will show video frame on server side.
 
-                key = cv2.waitKey(1) & 0xFF
-                if key == ord('q'):
-                    client_socket.close()
+                #key = cv2.waitKey(1) & 0xFF
+                #if key == ord('q'):
+                    #client_socket.close()
