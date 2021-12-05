@@ -16,7 +16,8 @@ server_socket.bind(socket_address)
 server_socket.listen(5)
 print("LISTENING AT:", socket_address)
 
-
+Dir_path = "./swarmlab-hybrid/scr-local/instance/poc-datacollector"
+os.system("./tools/poc-dummy-create camera_1")
 # Socket Accept
 while True:
     client_socket, addr = server_socket.accept()
@@ -32,8 +33,8 @@ while True:
         # If a face is recogniced
 
             if face_id :
-                # Writes the person that entered the door and the time/day 
-                pass
+                # Writes the person that entered the door and the time/day
+                os.system("./tools/poc-dummy-send [data]")
             else: # If the face is not recogniced then the camera video 
                 # will be viewable for the client 
                 frame = imutils.resize(frame, width=320)
