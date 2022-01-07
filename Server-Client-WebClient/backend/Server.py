@@ -4,10 +4,7 @@ from datetime import datetime
 from random import randint
 from starlette.responses import Response
 from pymongo import MongoClient
-
-import sys
-sys.path.insert(0, 'backend/')
-from backend import model
+from model import Data
 
 
 PORT = 50007
@@ -43,14 +40,17 @@ class ThreadedServer(object):
 
                 payload = client.recv(size)
                 if payload:
+                    print("Data sended")
+                    # print(payload)
                     # Set the response to echo back the recieved data 
                     data_recieved = pickle.loads(payload)
+                    # print(data_recieved)
                     data_recieved.entry_id = number_of_items + 1
-                    print(data_recieved.entry_id)
-                    print(data_recieved.camera_id)
-                    print(data_recieved.person_id)
-                    print(data_recieved.person_name)
-                    print(data_recieved.time_recognised)
+                    # print(data_recieved.entry_id)
+                    # print(data_recieved.camera_id)
+                    # print(data_recieved.person_id)
+                    # print(data_recieved.person_name)
+                    # print(data_recieved.time_recognised)
                     result = collection.insert_one({
                        "entry_id": data_recieved.entry_id,
                        "camera_id": data_recieved.camera_id,
