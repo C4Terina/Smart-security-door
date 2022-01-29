@@ -5,8 +5,6 @@ Our project's goal is to create an automated door lock which allows you to unloc
 
    Breadboard
    
-   Power Supply
-   
    Wires
    
    RC522 RFID Sensor and RFID cards
@@ -15,11 +13,17 @@ Our project's goal is to create an automated door lock which allows you to unloc
    
    LEDs 
    
+   Buzzer
+   
    Resistors
    
    Laptop/PC 
    
-   Python with opencv, opencv-contrib-python, mediapipe, os, numpy, and PIL
+   MongoDB
+   
+   Python with opencv, opencv-contrib-python, mediapipe, os, numpy, pymongo, serial, uvicorn
+   
+   Node.js with Reactjs, axios,  material-table
    
 
 ## Installation:
