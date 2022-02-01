@@ -5,43 +5,31 @@ import time
 import serial
 import time
 from datetime import datetime
-from random import randint
-from pymongo import MongoClient
-from backend.database import add_data
-from backend.model import Data
-                                           
+import socket, pickle
 
-client = MongoClient('mongodb://localhost:27017')
-
-#create database with the name dataList
-database = client.CamEntries
-
-#create table with the name data
-collection = database.CamData
+HOST = 'localhost'
+PORT = 50007
+# Create a socket connection.
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((HOST, PORT))
 
 video = cv2.VideoCapture(0)
 cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
-
 # Loaading the face recogniser and the trained data into the program
 recognise = cv2.face.LBPHFaceRecognizer_create()
 recognise.read("accepted_faces.yml")
-
 labels = [] # dictionary
 for user in os.listdir("faces"):
     labels.append(user)
-
 print(labels)
-
 mpDraw = mp.solutions.drawing_utils
 mpFaceMesh = mp.solutions.face_mesh
 mpFaceMesh = mp.solutions.face_mesh
 faceMesh = mpFaceMesh.FaceMesh(max_num_faces=1)
 drawMeshSpecs = mpDraw.DrawingSpec(color=[0,255,0], thickness=1,circle_radius=1)
-
 commPort = 'COM3'
 ser = serial.Serial(commPort, baudrate = 9600, timeout = 1)
 flag = True
-
 while True:
     
     check, frame = video.read()
@@ -77,16 +65,12 @@ while True:
                     if id_ and labels[int(id_)-1] != 'random_person':
                         if flag:
                             ser.write(b'o')
-                            time.sleep(3)
+                            # time.sleep(3)
                             flag = False
-                            data_to_send = Data(entry_id = 0, camera_id = 1, person_id = id_, person_name = labels[int(id_)-1], time_recognised = datetime.now())
-                            result = collection.insert_one({
-                                "entry_id": data_to_send.entry_id,
-                                "camera_id": data_to_send.camera_id,
-                                "person_id": data_to_send.person_id,
-                                "person_name": data_to_send.person_name,
-                                "time_recognised": data_to_send.time_recognised})
-
+                            # data_to_send = Data(entry_id = 0, camera_id = 1, person_id = int(id_), person_name = labels[int(id_)-1], time_recognised = datetime.now())
+                            data_to_send = "1" + "/" + str(id_) + "/" + labels[int(id_)-1] + "/" + str(datetime.now())
+                            data_string = pickle.dumps(data_to_send)
+                            s.send(data_string)
                         timerecognised = time.time()
                         elsapsed_time = timerecognised - start_timer
                         if elsapsed_time > 10:
@@ -99,10 +83,19 @@ while True:
                     
                 cv2.rectangle(frame, (x_min,y_min) ,(x_max,y_max), (0,255,0), 3)
     cv2.imshow("Video",frame)
+    # data = ser.readline()
+    # if data:
+    #     print(data)
+    #     name = "RFID Card"
+    #     RFID_timerecognised =  datetime.now()
+    #     result = collection.insert_one({
+    #                             "entry_id": 1,
+    #                             "camera_id": 1,
+    #                             "person_id": 0,
+    #                             "person_name": name,
+    #                             "time_recognised": RFID_timerecognised})
     key = cv2.waitKey(1)
-
     if (key == ord('q')):
         break
-
 video.release()
 cv2.destroyAllWindows()
