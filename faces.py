@@ -119,3 +119,4 @@ ids = np.array(ids)
 
 trainer.train(faces, ids)
 trainer.write("accepted_faces.yml")
+print("All done")
