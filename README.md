@@ -1,8 +1,8 @@
 ## Smart-security-door
 Our project's goal is to create an automated door lock which allows you to unlock it through face recognition. If the face recognition is successful the door lock will unlock otherwise it will remain locked. The project is all local based but it can be hosted to diferent machines if it's altered correctly. 
 
-## Requirements:
- # Hardware
+# Requirements:
+ ## Hardware
    -  Breadboard
    -  Wires
    -  RC522 RFID Sensor and RFID cards
@@ -11,7 +11,7 @@ Our project's goal is to create an automated door lock which allows you to unloc
    -  Buzzer
    -  Laptop/PC or Raspberry Pi
  
- # Software
+ ## Software
    -  MongoDB
    -  Python with opencv, opencv-contrib-python, mediapipe, os, numpy, pymongo, serial, uvicorn
    -  Node.js with Reactjs, axios,  material-table
@@ -51,7 +51,7 @@ Our project's goal is to create an automated door lock which allows you to unloc
  <a href="https://www.youtube.com/watch?v=wHEwZ1uJExM">Tutorial</a> on how to build it and how it works.
 
 ## How to start:
-For the andruino you have to save the code using the [Arduino IDE](##What-the-project-is-using).<br />
+For the andruino you have to save the code using the [Arduino IDE](#What-the-project-is-using).<br />
 For the face recognition you will need to run the faces.py file and capture two faces. Then you have to run the Server.py and after the the face_recognition.py.
 For the backend WebClient, run in the folder the file in in the following command:<br />
 ```uvicorn WebClient:app --reload```<br />
