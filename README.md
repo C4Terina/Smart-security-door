@@ -2,7 +2,7 @@
 Our project's goal is to create an automated door lock which allows you to unlock it through face recognition. If the face recognition is successful the door lock will unlock otherwise it will remain locked. The project is all local based but it can be hosted to diferent machines if it's altered correctly. 
 
 ## Requirements:
- - # Hardware
+ # Hardware
    -  Breadboard
    -  Wires
    -  RC522 RFID Sensor and RFID cards
@@ -11,13 +11,13 @@ Our project's goal is to create an automated door lock which allows you to unloc
    -  Buzzer
    -  Laptop/PC or Raspberry Pi
  
- - # Software
+ # Software
    -  MongoDB
    -  Python with opencv, opencv-contrib-python, mediapipe, os, numpy, pymongo, serial, uvicorn
    -  Node.js with Reactjs, axios,  material-table
    -  Android studio
    
-## What the project is using
+# What the project is using
  - For the arduino code the device must have the <a href="https://www.arduino.cc/en/software">Arduino IDE</a> so the use can install the code to the arduino.
  - For the face recognition part of the project, we will need <a href="https://www.python.org/">python</a>.
  - The main libraries for the face recognition are <a href="https://opencv.org/">OpenCV</a> and <a href="https://google.github.io/mediapipe/">Mediapipe</a>.
