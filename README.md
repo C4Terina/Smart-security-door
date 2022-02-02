@@ -25,7 +25,10 @@ Our project's goal is to create an automated door lock which allows you to unloc
    
  -  Node.js with Reactjs, axios,  material-table
    
+## What the project is using
 
+ - For the face recognition part of the project, we will need python. [Download from here] (https://www.python.org/downloads/)
+ 
 ## Installation:
 
 ## Usage:
