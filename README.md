@@ -1,4 +1,4 @@
-# Smart-security-door
+## Smart-security-door
 Our project's goal is to create an automated door lock which allows you to unlock it through face recognition. If the face recognition is successful the door lock will unlock otherwise it will remain locked. The project is all local based but it can be hosted to diferent machines if it's altered correctly. 
 
 ## Requirements:
@@ -33,8 +33,8 @@ Our project's goal is to create an automated door lock which allows you to unloc
  - Also there is as simple android app the displays the data from the api WebClient
    - To use the app the project needs <a href="https://www.mongodb.com/">Android Studio</a>
  
-## Installation:
-# The Software part
+# Installation:
+## The Software part
  First install python on your device [<a href="https://www.python.org/downloads/">Download</a>]. After that, run the following command in to a terminal<br />
   -```python3 -m pip install -r requirements.txt```.<br />
  Then for the frontend part install NodeJS [<a href="https://nodejs.org/en/download/">Download</a>] and un the following commands in to a terminal: <br />
@@ -45,8 +45,8 @@ Our project's goal is to create an automated door lock which allows you to unloc
    ```
  Lastly, download Android Studio [<a href="https://developer.android.com/studio?gclid=Cj0KCQiA9OiPBhCOARIsAI0y71DaIBNJtUiDsKBke08osAMGXi8kei2DlyRLMzUNe1EAWD54G80AkswaAuqrEALw_wcB&gclsrc=aw.ds#downloads">Download</a>]
  
-# The Hardware part
- For the hardware part you will need the items in the [list](#Hardware) to create the following
+## The Hardware part
+ For the hardware part you will need the items in the [list](##Hardware) to create the following
  ![](Misc/Sketch.png)
  <a href="https://www.youtube.com/watch?v=wHEwZ1uJExM">Tutorial</a> on how to build it and how it works.
 
