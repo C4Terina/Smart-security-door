@@ -27,7 +27,7 @@ Our project's goal is to create an automated door lock which allows you to unloc
    
 ## What the project is using
 
- - For the face recognition part of the project, we will need python. [Download from here] (https://www.python.org/downloads/)
+ - For the face recognition part of the project, we will need python. [Download from here] (https://www.python.org/downloads/ "LCO')
  
 ## Installation:
 
