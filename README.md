@@ -46,7 +46,7 @@ Our project's goal is to create an automated door lock which allows you to unloc
  Lastly, download Android Studio [<a href="https://developer.android.com/studio?gclid=Cj0KCQiA9OiPBhCOARIsAI0y71DaIBNJtUiDsKBke08osAMGXi8kei2DlyRLMzUNe1EAWD54G80AkswaAuqrEALw_wcB&gclsrc=aw.ds#downloads">Download</a>]
  
 ## The Hardware part
- For the hardware part you will need the items in the [list](##hardware) to create the following
+ For the hardware part you will need the items in the [list](#hardware) to create the following
  ![](Misc/Sketch.png)
  <a href="https://www.youtube.com/watch?v=wHEwZ1uJExM">Tutorial</a> on how to build it and how it works.
 
