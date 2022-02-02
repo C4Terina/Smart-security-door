@@ -1,0 +1,9 @@
+numpy
+opencv-python
+opencv-contrib-python
+mediapipe
+Piillow
+pymongo
+fastapi
+uvicorn
+motor
