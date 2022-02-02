@@ -1,6 +1,6 @@
 numpy
 opencv-python
-opencv-contrib-python
+opencv-contrib-python==4.5.4.60
 mediapipe
 Pillow
 pymongo
