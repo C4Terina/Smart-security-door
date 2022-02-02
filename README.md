@@ -3,27 +3,27 @@ Our project's goal is to create an automated door lock which allows you to unloc
 
 ## Requirements:
 
-   Breadboard
+ -  Breadboard
    
-   Wires
+ -  Wires
    
-   RC522 RFID Sensor and RFID cards
+ - RC522 RFID Sensor and RFID cards
    
-   Micro Servo 
+ -  Micro Servo 
    
-   LEDs 
+ -  LEDs 
    
-   Buzzer
+ -  Buzzer
    
-   Resistors
+ -  Resistors
    
-   Laptop/PC 
+ -  Laptop/PC 
    
-   MongoDB
+ -  MongoDB
    
-   Python with opencv, opencv-contrib-python, mediapipe, os, numpy, pymongo, serial, uvicorn
+ -  Python with opencv, opencv-contrib-python, mediapipe, os, numpy, pymongo, serial, uvicorn
    
-   Node.js with Reactjs, axios,  material-table
+ -  Node.js with Reactjs, axios,  material-table
    
 
 ## Installation:
