@@ -58,3 +58,13 @@ The WebClient must be running for the rest to work
 For the frontend, run in the folder the file in in the following command:<br />
 ```npm start```<br />
 For the app start the emulator in ardroid studio
+
+## Important Note
+The andruino code must have the id of the card the user is using:<br />
+```arduino
+content.toUpperCase();
+        if (content.substring(1) == "5A A1 A1 15") //change here the UID of the card/cards that you want to give access
+        {  
+ ```
+    <br />
+ If the id is not the same the moter will not "open"    
