@@ -35,10 +35,13 @@ Our project's goal is to create an automated door lock which allows you to unloc
  
 # Installation:
 ## The Software part
- First install python on your device [<a href="https://www.python.org/downloads/">Download</a>]. After that, run the following command in to a terminal<br />
-  -```python3 -m pip install -r requirements.txt```.<br />
+For the arduino install the two libraries [rfid master](https://www.arduino.cc/reference/en/libraries/mfrc522/) and [Servo](https://www.arduino.cc/reference/en/libraries/servo/). Add the by going to `Sketch > Include Library > Add .ZIP Library...`.<br />
+For the database install [MongoDB](https://www.mongodb.com/try/download/community) and for extra help install [MongoDB Compass](https://www.mongodb.com/try/download/compass).<br />
+For the face recognition and the api, install python on your device [<a href="https://www.python.org/downloads/">Download</a>]. After that, run the following command in to a terminal<br />
+  ```python3 -m pip install -r requirements.txt```.<br />
  Then for the frontend part install NodeJS [<a href="https://nodejs.org/en/download/">Download</a>] and un the following commands in to a terminal: <br />
-   ```npm axios bootstrap``` more about axios <a href="https://www.npmjs.com/package/axios">here</a>, more about bootstrap <a href="https://getbootstrap.com/">here</a><br />
+   ```npm install```<br />
+   ```npm install axios bootstrap``` more about axios <a href="https://www.npmjs.com/package/axios">here</a>, more about bootstrap <a href="https://getbootstrap.com/">here</a><br />
    ```bash 
    npm install material-table --save
    npm install @material-ui/core --save
@@ -68,4 +71,5 @@ content.toUpperCase();
         {  
  ```
  <br />
- If the id is not the same the moter will not "open"    
+ If the id is not the same the moter will not "open" 
+ Check what port is the arduino using in 'Tools > Port' and change the `face_recognition.py` if it is not the same. Also check if your machine is allowing access to that port and if not give it access.
