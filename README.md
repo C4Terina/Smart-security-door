@@ -66,5 +66,5 @@ content.toUpperCase();
         if (content.substring(1) == "5A A1 A1 15") //change here the UID of the card/cards that you want to give access
         {  
  ```
-    <br />
+ <br />
  If the id is not the same the moter will not "open"    
