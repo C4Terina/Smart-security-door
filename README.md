@@ -52,9 +52,9 @@ Our project's goal is to create an automated door lock which allows you to unloc
 
 ## How to start:
 You will first need to run the faces.py file and capture two faces. Then you have to run the Server.py and after the the face_recognition.py.
-For the backend WebClient, run in the folder the file in in the following command:
-```uvicorn WebClient:app --reload```
+For the backend WebClient, run in the folder the file in in the following command:<br />
+```uvicorn WebClient:app --reload```<br />
 The WebClient must be running for the rest to work
-For the frontend, run in the folder the file in in the following command:
-```npm start```
+For the frontend, run in the folder the file in in the following command:<br />
+```npm start```<br />
 For the app start the emulator in ardroid studio
